@@ -10,11 +10,11 @@ from sqlalchemy.ext.declarative import declarative_base
 import bcrypt
 
 
-db_user = 'gen_user'
-db_password = 'testerai2023yoga'
-db_host = '80.90.184.30'
-db_name = 'default_db'
-db_port = '5432'
+db_user = 'db_user'
+db_password = 'db_password'
+db_host = 'db_host'
+db_name = 'db_name'
+db_port = 'db_port'
 db_url = f"postgresql://{db_user}:{db_password}@{db_host}:{db_port}/{db_name}"
 
 engine = create_engine(db_url)
