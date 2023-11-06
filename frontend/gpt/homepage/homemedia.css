@@ -1,0 +1,149 @@
+@media screen and (max-width: 1460px) {
+  .githubblock1 {
+    display: inline-block;
+    background-color: #14171f;
+    border: 1px solid white;
+    border-radius: 7px;
+    height: 80px;
+    width: 340px;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+
+  .githubblock2 {
+    display: inline-block;
+    background-color: #14171f;
+    border: 1px solid white;
+    border-radius: 7px;
+    height: 80px;
+    width: 340px;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+
+  .githubblock3 {
+    display: inline-block;
+    background-color: #14171f;
+    border: 1px solid white;
+    border-radius: 7px;
+    height: 80px;
+    width: 340px;
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .rightbody {
+    text-align: center;
+  }
+
+  .urlsub {
+    padding: 8px 39px;
+  }
+
+  .giturlinp {
+    padding: 12px 140px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .giturlinp {
+    padding: 12px 100px;
+  }
+
+  .gitlinks a {
+    width: 400px;
+  }
+
+  .textenter {
+    padding: 12px 40px;
+  }
+}
+
+@media screen and (max-width: 928px) {
+  header {
+    flex-direction: column;
+  }
+
+  .leftside {
+    width: 98%;
+  }
+
+  .righteside {
+    width: 98%;
+  }
+
+  .wrapper {
+    height: 100%;
+  }
+
+  .browsdiv {
+    display: none;
+  }
+  .languages {
+    padding: 5px 10px;
+    margin: 20px 0 0 10px;
+  }
+  .hacks {
+    padding: 5px 10px;
+    margin: 20px 0 0 10px;
+  }
+  .ask {
+    padding: 5px 10px;
+    margin: 20px 0 0 10px;
+  }
+  .yourcodebtn {
+    padding: 5px 20px;
+    margin: 20px 10px 0px 0px;
+  }
+  .yourcodebtn2 {
+    padding: 5px 20px;
+    margin: 20px 10px 0px 0px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .logo p {
+    font-size: 14px;
+  }
+
+  .headbtn .loyalpoint {
+    font-size: 14px;
+  }
+
+  .singup,
+  .login {
+    font-size: 14px;
+  }
+
+  .gitreposinp input {
+    padding: 15px 150px;
+  }
+  .headbtn:nth-child(1),
+  .headbtn:nth-child(2) {
+    font-size: 15px;
+  }
+  .paybtn {
+    padding: 4px 11px;
+    font-size: 13px;
+  }
+  .languages {
+    padding: 5px 10px;
+    margin: 20px 0 0 5px;
+  }
+  .hacks {
+    padding: 5px 10px;
+    margin: 20px 0 0 5px;
+  }
+  .ask {
+    padding: 5px 10px;
+    margin: 20px 0 0 5px;
+  }
+}

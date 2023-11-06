@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./homepage.css " />
+    <link rel="stylesheet" href="./homemedia.css" />
+    <link rel="stylesheet" href="./highlight/styles/agate.min.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="paywrapper">
+        <div class="payWind">
+          <div class="paycancle">
+            <span></span>
+            <span></span>
+          </div>
+
+          <h3>Do you whant to Upgrade account?</h3>
+          <a href="#" class="paypalbtnA">Upgrade Account</a>
+        </div>
+      </div>
+      <div class="starthead">
+        <div class="logo">
+          <a href="../getstarted.html">
+            <span
+              class="iconify logoico"
+              data-icon="material-symbols:mode-off-on"
+              style="color: #0cf"
+              data-width="33"
+              data-height="33"
+            ></span>
+            <p>Tester ai</p>
+          </a>
+        </div>
+        <div class="headbtn">
+          <a href="#">Discord </a>
+          <a href="#">Git hub </a>
+          <a href="#" class="loyalpoint"
+            >0
+            <span
+              class="iconify"
+              data-icon="ph:star-fill"
+              style="color: #0cf"
+              data-width="15"
+              data-height="15"
+            ></span>
+            <a href="#" class="paybtn">Upgrade Account</a>
+          </a>
+          <a href="#" class="singup">Sing up </a>
+          <a href="#" class="login">Log in</a>
+          <a href="#" class="logout">Log out</a>
+        </div>
+      </div>
+
+      <div class="container">
+        <header>
+          <div class="leftside">
+            <div class="leftheader">
+              <h3>Ai Asistant</h3>
+              <div class="browsdiv">
+                <span
+                  class="iconify browsico"
+                  data-icon="bi:file-earmark-code-fill"
+                  style="color: #ffffff"
+                  data-width="20"
+                  data-height="20"
+                ></span>
+                <input type="button" value="Browse code" class="filebtn" />
+              </div>
+            </div>
+            <div class="leftbody">
+              <ul class="leftmasage">
+                <li>
+                  I'm here to help you understand your codebase. Get started by
+                  importing a GitHub repository or a code snippet. You can ask
+                  me to explain how something works, where something is
+                  implemented, or even how to debub an error.
+                </li>
+              </ul>
+              <ul class="secondmasagebox"></ul>
+            </div>
+            <form id="message_form" action="">
+              <textarea
+                class="textenter"
+                id="message"
+                name="message"
+                placeholder="Ask a question..."
+                value=""
+                rows="3"
+                required
+              ></textarea>
+              <input type="submit" class="masagesub" value="Ask All" />
+              <!--  -->
+              <a href="#" class="masagesub2">plese login"</a>
+              <!--  -->
+            </form>
+          </div>
+          <div class="righteside">
+            <div class="rightheader">
+              <h3>Manage codebases</h3>
+              <a href="#" class="codemanage">manage codebase</a>
+              <a href="#" class="codemanage none">Add GitHub repository</a>
+              <a href="#" class="codemanage none">Add GitLab repository</a>
+              <a href="#" class="codemanage none">Add a code snippet</a>
+            </div>
+            <div class="rightbody">
+              <div class="githubblock1">
+                <span
+                  class="iconify add"
+                  data-icon="icons8:plus"
+                  style="color: white"
+                  data-width="40"
+                  data-height="40"
+                ></span>
+                <a href="#"> Add GitHub repository</a>
+              </div>
+              <div class="githubrepos">
+                <div class="gitoffer">
+                  <h1>Add a GitHub repository</h1>
+                  <p>
+                    Paste a link to a public repository or import your own by
+                    authenticating with GitHub.
+                  </p>
+                </div>
+                <div class="gitreposinp">
+                  <span
+                    class="iconify addfile"
+                    data-icon="pepicons-pencil:chain"
+                    style="color: #5d6988"
+                    data-width="30"
+                    data-height="30"
+                  ></span>
+                  <input
+                    type="url"
+                    placeholder="GitHub repositoty url"
+                    required
+                    class="giturlinp"
+                  />
+                  <input type="submit" class="urlsub" />
+                </div>
+                <div class="gitlinks">
+                  <h3 class="gitlinksoffer">Examples</h3>
+                  <a href="#"
+                    ><span
+                      class="iconify githubico"
+                      data-icon="cib:github"
+                      style="color: #e1dfdf"
+                      data-width="30"
+                      data-height="30"
+                    ></span
+                    >hwchase17/langchain</a
+                  >
+                  <a href="#"
+                    ><span
+                      class="iconify githubico"
+                      data-icon="cib:github"
+                      style="color: #e1dfdf"
+                      data-width="30"
+                      data-height="30"
+                    ></span
+                    >psf/requests</a
+                  >
+                  <a href="#"
+                    ><span
+                      class="iconify githubico"
+                      data-icon="cib:github"
+                      style="color: #e1dfdf"
+                      data-width="30"
+                      data-height="30"
+                    ></span
+                    >shobrook/adrenaline</a
+                  >
+                </div>
+              </div>
+              <div class="githubblock2">
+                <span
+                  class="iconify add"
+                  data-icon="icons8:plus"
+                  style="color: white"
+                  data-width="40"
+                  data-height="40"
+                ></span>
+                <a href="#"> Add GitLab repository</a>
+              </div>
+              <div class="githubrepos">
+                <div class="gitoffer">
+                  <h1>Add a GitHub repository</h1>
+                  <p>
+                    Paste a link to a public repository or import your own by
+                    authenticating with GitHub.
+                  </p>
+                </div>
+                <div class="gitreposinp">
+                  <span
+                    class="iconify addfile"
+                    data-icon="pepicons-pencil:chain"
+                    style="color: #5d6988"
+                    data-width="30"
+                    data-height="30"
+                  ></span>
+                  <input
+                    type="url"
+                    placeholder="GitHub repositoty url"
+                    required
+                    class="giturlinp"
+                  />
+                  <input type="submit" class="urlsub" />
+                </div>
+                <div class="gitlinks">
+                  <h3 class="gitlinksoffer">Examples</h3>
+                  <a href="#"
+                    ><span
+                      class="iconify githubico"
+                      data-icon="cib:github"
+                      style="color: #e1dfdf"
+                      data-width="30"
+                      data-height="30"
+                    ></span
+                    >hwchase17/langchain</a
+                  >
+                  <a href="#"
+                    ><span
+                      class="iconify githubico"
+                      data-icon="cib:github"
+                      style="color: #e1dfdf"
+                      data-width="30"
+                      data-height="30"
+                    ></span
+                    >psf/requests</a
+                  >
+                  <a href="#"
+                    ><span
+                      class="iconify githubico"
+                      data-icon="cib:github"
+                      style="color: #e1dfdf"
+                      data-width="30"
+                      data-height="30"
+                    ></span>
+                    shobrook/adrenaline</a
+                  >
+                </div>
+              </div>
+              <div class="githubblock3">
+                <span
+                  class="iconify add"
+                  data-icon="icons8:plus"
+                  style="color: white"
+                  data-width="40"
+                  data-height="40"
+                ></span>
+                <a href="#"> Add code snippet</a>
+              </div>
+              <div class="yourcode">
+                <div class="yourcodeheader">
+                  <select name="languages" class="languages">
+                    <option value="Python">Python</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Node.Js">Node.Js</option>
+                    <option value="Java">Java</option>
+                    <option value="PHP">PHP</option>
+                    <option value="C++">C++</option>
+                    <option value="R">R</option>
+                    <option value="Bash">Bash</option>
+                    <option value="C#">C#</option>
+                    <option value="GO">Go</option>
+                    <option value="Perl">Perl</option>
+                    <option value="Scala">Scala</option>
+                    <option value="Haskell">Haskell</option>
+                    <option value="Rust">Kotlin</option>
+                    <option value="SQl">SQL</option>
+                    <option value="SQl">Swift</option>
+                  </select>
+                  <select name="Hacks" class="hacks">
+                    <option value="HAcks">Hacks</option>
+                    <option value="Cascadia Code">Cascadia Code</option>
+                    <option value="Fira Code">Fira Code</option>
+                    <option value="JetBrains Moni">JetBrains Moni</option>
+                    <option value="onsolas">onsolas</option>
+                  </select>
+                  <select name="Ask" class="ask">
+                    <option value="Finde Bugs">Finde Bugs</option>
+                    <option value="Explain Code">Explain Code</option>
+                    <option value="Optimize Code">Optimize Code</option>
+                    <option value="Add Coments ">Add Coments</option>
+                    <option value="Complate Code">Complate Code</option>
+                  </select>
+                  <a class="yourcodebtn">Add</a>
+                  <!--  -->
+                  <a class="yourcodebtn2">Please login</a>
+                  <!--  -->
+                </div>
+                <div class="yourcodebody">
+                  <textarea
+                    name="code"
+                    class="textarea"
+                    placeholder="# Paste your code here"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="login2">
+          <div class="loginform">
+            <div class="logincancle">
+              <span></span>
+              <span></span>
+            </div>
+            <div class="formoffer">
+              <a href="#" class="formoffersingup">Sing Up</a>
+              <a href="#" class="offerlogin">Log in</a>
+            </div>
+            <div class="loginbody">
+              <form action="/signin" method="POST" id="signin">
+                <div class="loginp">
+                  <input
+                    type="email"
+                    required
+                    class="mail"
+                    placeholder="enter your e-mail"
+                    name="email"
+                  />
+                  <input
+                    type="password"
+                    required
+                    class="pass"
+                    placeholder="enter your password"
+                    name="password"
+                  />
+                  <a href="#" class="loggit">
+                    <span
+                      class="iconify icogitlog"
+                      data-icon="cib:github"
+                      style="color: #e1dfdf"
+                      data-width="30"
+                      data-height="30"
+                    ></span>
+                    GitHub</a
+                  >
+                  <a href="#" class="loggoogle">
+                    <div
+                      class="g_id_signin"
+                      data-type="standard"
+                      data-shape="rectangular"
+                      data-theme="filled_black"
+                      data-text="continue_with"
+                      data-size="large"
+                      data-width="304"
+                      data-logo_alignment="left"
+                    ></div>
+                    <span
+                      class="iconify icologgoogle"
+                      data-icon="bi:google"
+                      style="color: #e1dfdf"
+                      data-width="30"
+                      data-height="30"
+                    ></span>
+                    Google</a
+                  >
+                  <div
+                    id="g_id_onload"
+                    data-client_id="283997917725-pgrtroaln3mj9arcartodfud2arr6oe4.apps.googleusercontent.com"
+                    data-context="signin"
+                    data-ux_mode="popup"
+                    data-callback="onSignin"
+                    data-auto_prompt="false"
+                  ></div>
+                  <span class="invalidPass">Invalid email or password</span>
+                  <input type="submit" class="loginsub" />
+                </div>
+              </form>
+              <form action="/signup" method="POST" id="signup">
+                <div class="loginp">
+                  <input
+                    type="email"
+                    required
+                    class="mail"
+                    placeholder="enter your e-mail"
+                    name="email"
+                  />
+                  <input
+                    type="password"
+                    required
+                    class="pass pass3"
+                    placeholder="enter your password"
+                    name="password"
+                  />
+                  <a href="#" class="loggit">
+                    <span
+                      class="iconify icogitlog"
+                      data-icon="cib:github"
+                      style="color: #e1dfdf"
+                      data-width="30"
+                      data-height="30"
+                    ></span>
+                    GitHub</a
+                  >
+                  <a href="#" class="loggoogle">
+                    <div
+                      class="g_id_signin"
+                      data-type="standard"
+                      data-shape="rectangular"
+                      data-theme="filled_black"
+                      data-text="continue_with"
+                      data-size="large"
+                      data-width="304"
+                      data-logo_alignment="left"
+                    ></div>
+                    <span
+                      class="iconify icologgoogle"
+                      data-icon="bi:google"
+                      style="color: #e1dfdf"
+                      data-width="30"
+                      data-height="30"
+                    ></span>
+                    Google</a
+                  >
+                  <span class="invalidmail">Invalid email or password</span>
+                  <input type="submit" class="loginsub" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./homepage.js"></script>
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="./highlight/highlight.min.js"></script>
+    <script src="./highlight/languages/go.min.js"></script>
+  </body>
+</html>
