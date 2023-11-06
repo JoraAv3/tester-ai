@@ -179,35 +179,11 @@ def sign_in(data: SignInRequest):
             status_code=401, detail='Invalid email or password')
 
 
-# AIzaSyDSd9wufqjLYT8MlTqDV-ClqmOF5UJ6gRk
-
 @app.get('/registeration/google')
 async def reg_google(request: Request, response: Response):
     try:
         data = dict(request.query_params)
         db = SessionLocal()
-        # token_url = "https://oauth2.googleapis.com/token"
-        # token_data = {
-        # "code": data.get("id"),
-        # "client_id": "283997917725-svbidm10v7aksu9pe67m0f2vbpohh75i.apps.googleusercontent.com",
-        # "client_secret": "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",
-        # "redirect_uri": "https:/app.tester-ai.com/chat",
-        # "grant_type": "authorization_code",
-        # "scope": "https://oauth2.googleapis.com/auth/cloud-platform"
-        # }
-        # print("Before token_response")
-        # token_response = requests.post(token_url, data=token_data)
-        # print("token_response", token_response)
-        # if token_response.status_code == 200:
-        # token_json = token_response.json()
-        # access_token = token_json["access_token"]
-        # profile_url = "https://people.googleapis.com/v1/people/me?personFields=names,emailAddresses"
-        # headers = {"Authorization": f"Bearer {access_token}"}
-
-        # print("access_token", access_token)
-        # profile_response = requests.get(profile_url, headers=headers)
-        # print("profile_response", profile_response)
-        # if profile_response.status_code == 200:
         google_data = User(
             login=data.get("email"), token_id=data.get("jti"))
         db.add(google_data)
@@ -227,8 +203,8 @@ async def google_login(*args, **kwargs):
     print(args, kwargs)
 
 
-github_client_id = '35b417b8af88e62aeecd'
-github_client_secret = '28d0094b06e492b87836752fb39390d5a22477ca'
+github_client_id = 'your_github_cliend_id'
+github_client_secret = 'your_github_client_secret'
 
 
 @app.get('/github-login')
