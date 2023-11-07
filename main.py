@@ -24,15 +24,7 @@ from wolverine_main.wolverine.wolverine import send_message_to_gpt, apply_messag
 
 def get_application() -> FastAPI:
     application = FastAPI(openapi_url='')
-    # application.config["PREFERRED_URL_SCHEME"] = "https"
     return application
-
-# openapi_url=''
-
-
-origins = [
-    '*'
-]
 
 app = get_application()
 
@@ -45,15 +37,6 @@ app.add_middleware(
     expose_headers=["Content-Disposition"],
     max_age=600,
 )
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=origins,
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-
 
 class ConnectionManager:
     def __init__(self):
@@ -271,15 +254,6 @@ async def github_code(code: str, request: Request):
         print("error", error)
         raise HTTPException(
             status_code=403, detail="Invalid Github credentials.")
-
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-
 
 def save_message(message: str, user: User, question_id: Optional[Union[int, None]] = None):
     db = SessionLocal()
